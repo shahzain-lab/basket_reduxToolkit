@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+
+.App{
+ overflow:hidden;
+}
 .shopping{
   font-size: 3rem;
   font-family: 'Dancing Script', cursive;
