@@ -6,7 +6,7 @@ import './App.css';
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <h1 className="shopping">Shopping Basket</h1>
     <Product />
     <ProductCart />
