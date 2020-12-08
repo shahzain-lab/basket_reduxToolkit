@@ -59,7 +59,7 @@ export const ProductCart = () => {
         {products
           .filter(product => product.added)
           .map((product: ProductItem) => (
-            <React.Fragment key={product.id}>
+            <Fragment key={product.id}>
               <ListItem alignItems="flex-start">
                 <ListItemAvatar>
                   <Avatar alt="Product" src={product.imageUrl} />
@@ -67,7 +67,7 @@ export const ProductCart = () => {
                 <ListItemText
                   primary={product.title}
                   secondary={
-                    <React.Fragment>
+                    <Fragment>
                       <Typography
                         component="span"
                         variant="body2"
@@ -77,7 +77,7 @@ export const ProductCart = () => {
                         &pound;{(product.price / 100).toFixed(2)}
                       </Typography>
                       {` — ${product.description}`}
-                    </React.Fragment>
+                    </Fragment>
                   }
                 />
                 <ListItemSecondaryAction>
@@ -91,7 +91,7 @@ export const ProductCart = () => {
                 </ListItemSecondaryAction>
               </ListItem>
               <Divider variant="inset" component="li" />
-            </React.Fragment>
+            </Fragment>
           ))}
         <ListItem className={classes.listItem}>
           <Typography variant="subtitle1" className={classes.total}>
