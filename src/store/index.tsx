@@ -8,7 +8,7 @@ const basketSlice = createSlice({
     reducers: {
         add: (state,action) => {
             return state.map(item => {
-                if(item.id != action.payload.id) {
+                if(item.id !== action.payload.id) {
                     return item
                 }
                 return {
